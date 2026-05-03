@@ -1,0 +1,24 @@
+extends layout
+
+block contenido
+  .container.mt-5
+    .row.justify-content-center
+      .col-md-6.col-lg-4
+        .card
+          .card-body
+            h2.mb-4.text-center Iniciar sesión
+
+            // Mensajes flash (opcional)
+            if message
+              .alert.alert-danger= message
+
+            form(method="POST", action="/login")
+              .mb-3
+                label.form-label(for="username") Usuario
+                input.form-control(type="text", name="username", id="username", required)
+
+              .mb-3
+                label.form-label(for="password") Contraseña
+                input.form-control(type="password", name="password", id="password", required)
+
+              button.btn.btn-primary.w-100(type="submit") Entrar
