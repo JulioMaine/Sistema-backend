@@ -45,7 +45,7 @@ primer_proyecto_back/
 ## ⚙️ Instalación y uso
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/marcelonj/primer_proyecto_back.git
+   git clone https://github.com/JulioMaine/Sistema-backend.git
    cd primer_proyecto_back
 
 Instalar dependencias:
